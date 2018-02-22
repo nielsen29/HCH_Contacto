@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:divider="?android:attr/dividerHorizontal"
+    android:orientation="horizontal"
+    android:showDividers="middle"
+    tools:context="com.hchiriqui.hch_contacto.vistas.MedicoListActivity">
+
+    <!--
+    This layout is a two-pane layout for the Medicos
+    master/detail flow.
+    
+    -->
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/medico_list"
+        android:name="com.hchiriqui.hch_contacto.vistas.MedicoListFragment"
+        android:layout_width="@dimen/item_width"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+        tools:context="com.hchiriqui.hch_contacto.vistas.MedicoListActivity"
+        tools:listitem="@layout/medico_list_content"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/medico_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            >
+
+        </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+                <android.support.v7.widget.CardView
+                    android:visibility="gone"
+                    android:id="@+id/card_detail"
+                    android:layout_width="550dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_margin="@dimen/activity_horizontal_margin"
+                            >
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/avatar_detail"
+                                android:layout_width="@dimen/dimen_circleimageprofile"
+                                android:layout_height="@dimen/dimen_circleimageprofile"
+                                android:src="@drawable/ic_launcher_background"
+                                android:layout_gravity="center|top"
+                                android:elevation="@dimen/elevation_circleimageprofile"
+                                android:layout_margin="@dimen/activity_horizontal_margin"
+                                />
+                            <TextView
+                                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                                android:id="@+id/nombre_detail"
+                                android:text="@string/appbar_scrolling_view_behavior"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="30dp"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/to_replace"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>

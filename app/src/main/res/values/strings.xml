@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hospital Chiriquí Contactos</string>
+    <string name="title_medico_list">Médicos</string>
+    <string name="title_medico_detail">Medico Detail</string>
+    <string name="especialidad">Especialidad</string>
+    <string name="celular">Celular</string>
+    <string name="telefono">Teléfono</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="ubicacion">Ubicación</string>
+    <string name="nivel">Nivel</string>
+    <string name="observacion">Observación</string>
+    <string name="llamar">Llamar</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="filter_title">Busqueda Filtrada</string>
+    <string name="filter_msj">Para realizar una busqueda por favor seleccione el filtrado a utilizar</string>
+    <string name="buscar">Buscar</string>
+    <string name="btn_medico">Médicos</string>
+    <string name="reintentar">Reintentar</string>
+    <string name="aceptar">Aceptar</string>
+</resources>

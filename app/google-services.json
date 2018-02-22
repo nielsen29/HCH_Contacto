@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "738894849385",
+    "firebase_url": "https://hchiriqui-contacto.firebaseio.com",
+    "project_id": "hchiriqui-contacto",
+    "storage_bucket": "hchiriqui-contacto.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738894849385:android:28a5c8441bae94ed",
+        "android_client_info": {
+          "package_name": "com.hchiriqui.hch_contacto"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738894849385-ts6vg4rccsht8bcoop5maq51v280tcuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi7fcRx05M2ALoT56KnaymgQ4NJ1R1cSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
